@@ -1,13 +1,12 @@
-function showVerticalMessage(obj) {
-    for (var i = 0; i < obj.length; i++) {
-        if (i < 10) {
-            if (obj[i] === 'м') {
-                console.log(obj[i].toUpperCase());
-            } else {
-                console.log(obj[i]);
-            }
+function showVerticalMessage(str) {
+    str = str.slice(0, 10);
+    for (let symbol of str){
+        if(symbol === 'м'){
+            console.log(symbol.toUpperCase());
+            continue
         }
+        console.log(symbol);
     }
 }
 
-showVerticalMessage('марафонbohtrfn')
+showVerticalMessage('марафонbohtrfnsadfasf')
